@@ -1,0 +1,6 @@
+[submodule "CookieIoC"]
+	path = CookieIoC
+	url = https://github.com/0xFireball/CookieIoC.git
+[submodule "Iridium.PluginCore"]
+	path = Iridium.PluginCore
+	url = https://github.com/0xFireball/Iridium.PluginCore.git
