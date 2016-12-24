@@ -1,7 +1,9 @@
-﻿{
+{
   "version": "1.0.0-*",
 
   "dependencies": {
+    "CookieIoC": "1.0.0-*",
+    "Iridium.PluginCore": "1.0.0-*",
     "NETStandard.Library": "1.6.0"
   },
 
