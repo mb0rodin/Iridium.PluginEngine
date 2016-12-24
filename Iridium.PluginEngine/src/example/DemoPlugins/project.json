@@ -1,7 +1,10 @@
-﻿{
+{
   "version": "1.0.0-*",
 
   "dependencies": {
+    "DemoPlugins.Sdk": "1.0.0-*",
+    "Iridium.PluginCore": "1.0.0-*",
+    "Iridium.PluginEngine": "1.0.0-*",
     "NETStandard.Library": "1.6.0"
   },
 
