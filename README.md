@@ -78,6 +78,10 @@ namespace DemoApp
 }
 ```
 
+`Iridium.PluginEngine` is built on a lower level library, [Iridium.PluginCore](https://github.com/0xFireball/Iridium.PluginCore), which
+provides classes for dynamically loading code and plugins at runtime. The PluginEngine abstracts and extends plugin loading, providing
+a built-in service locator for registering default and custom plugin implementations. Types loaded in plugins can override existing functionality in core libraries, making your application modular and extensible even without the original source code or recompiling the program.
+
 ## License
 
 Copyright &copy; 2016-2017 0xFireball, IridiumIon Software. All Rights Reserved.
