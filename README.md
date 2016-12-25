@@ -1,7 +1,9 @@
 
 # Iridium.PluginEngine
 
-Unified .NET Core Service Locator plugin system. A port of my Platinum.PluginEngine
+Unified .NET Core Service Locator plugin system. A port of my Platinum.PluginEngine.
+
+Iridium.PluginEngine makes it extremely easy to add an extensible plugin system to a .NET Core CLI or ASP.NET Core app.
 
 ## About
 
