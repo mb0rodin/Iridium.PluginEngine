@@ -7,7 +7,7 @@
   "dependencies": {
     "DemoPlugins": "1.0.0-*",
     "DemoPlugins.Sdk": "1.0.0-*",
-    "Iridium.PluginEngine": "1.0.0-*",
+    "Iridium.PluginEngine": "*",
     "Microsoft.NETCore.App": {
       "type": "platform",
       "version": "1.1.0"
