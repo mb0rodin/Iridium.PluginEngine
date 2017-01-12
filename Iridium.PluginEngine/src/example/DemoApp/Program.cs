@@ -11,6 +11,9 @@ namespace DemoApp
     {
         private static void Main()
         {
+            // Create a new ComponentRegistry realm
+            // Sets of plugins are specific to their registries
+            var registry = new ComponentRegistry();
             // First, use the Platinum.PluginCore3 API to load component plugins
             // See the Platinum.PluginCore3 documentation for more information
             // Create a new PluginLoader that loads plugins that implement IPluginComponent
@@ -29,7 +32,7 @@ namespace DemoApp
             // library that will be referenced both by the original application
             // and any plugins built for that application.
             // In this example, IConsole is declared in the DemoPlugin.SDK assembly
-            ComponentRegistry.Register(new DefaultConsole(), typeof(IConsole));
+            registry.Register(new DefaultConsole(), typeof(IConsole));
 
             // Register components from plugins
             // PluginLoader<T>.RegisterAll() is an extension method that
@@ -38,7 +41,7 @@ namespace DemoApp
             // In this example, all found implementations of IConsole will be registered as
             // IConsole components. The order of component registration is the same as the order the
             // plugin assemblies were loaded
-            plgLoader.RegisterAll();
+            plgLoader.RegisterAll(registry);
 
             // Load components from registry
             // Since the default implementation was registered first,
@@ -47,8 +50,8 @@ namespace DemoApp
             // ComponentRegistry.Get<T> will fetch the most recently registered
             // implementation of a component type.
             // GetAll<T> will fetch all implementations in an IEnumerable<T>
-            var consoles = ComponentRegistry.GetAll<IConsole>();
-            var myConsole = ComponentRegistry.Get<IConsole>();
+            var consoles = registry.GetAll<IConsole>();
+            var myConsole = registry.Get<IConsole>();
 
             // After retreiving a component implementation from the ComponentRegistry,
             // this line demonstrates calling a method declared in the IConsole interface.

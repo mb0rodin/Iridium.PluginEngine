@@ -4,11 +4,13 @@ using System.Collections.Generic;
 
 namespace Iridium.PluginEngine
 {
-    public static class ComponentRegistry
+    public class ComponentRegistry
     {
-        public static object Get(Type t, string contract = null)
+        private IoCRealm iocRealm = new IoCRealm();
+
+        public object Get(Type t, string contract = null)
         {
-            return IoC.Get(t, contract);
+            return iocRealm.Get(t, contract);
         }
 
         /// <summary>
@@ -17,14 +19,14 @@ namespace Iridium.PluginEngine
         /// <typeparam name="T">The type interface of the component to find</typeparam>
         /// <param name="contract"></param>
         /// <returns></returns>
-        public static T Get<T>(string contract = null)
+        public T Get<T>(string contract = null)
         {
             return (T)Get(typeof(T), contract);
         }
 
-        public static IEnumerable<T> GetAll<T>(string contract = null)
+        public IEnumerable<T> GetAll<T>(string contract = null)
         {
-            return IoC.GetAll<T>(contract);
+            return iocRealm.GetAll<T>(contract);
         }
 
         /// <summary>
@@ -35,9 +37,9 @@ namespace Iridium.PluginEngine
         /// <param name="type">
         ///     The type interface to register the component with. Usually, you can get this with typeof(T)
         /// </param>
-        public static void Register<T>(T instance, Type type)
+        public void Register<T>(T instance, Type type)
         {
-            IoC.RegisterConstant(instance, type);
+            iocRealm.RegisterConstant(instance, type);
         }
     }
 }
