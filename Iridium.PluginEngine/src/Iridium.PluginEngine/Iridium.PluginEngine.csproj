@@ -16,8 +16,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CookieIoC" Version="1.0.0-*" />
-    <PackageReference Include="Iridium.PluginCore" Version="1.0.0-*" />
+    <PackageReference Include="CookieIoC" Version="1.1.0" />
+    <PackageReference Include="Iridium.PluginCore" Version="1.0.0" />
   </ItemGroup>
 
 </Project>

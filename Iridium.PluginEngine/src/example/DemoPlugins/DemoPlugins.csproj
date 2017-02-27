@@ -12,12 +12,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DemoPlugins.Sdk\DemoPlugins.Sdk.csproj" />
     <ProjectReference Include="..\..\Iridium.PluginEngine\Iridium.PluginEngine.csproj" />
+    <ProjectReference Include="..\DemoPlugins.Sdk\DemoPlugins.Sdk.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Iridium.PluginCore" Version="1.0.0-*" />
+    <PackageReference Include="Iridium.PluginCore" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
