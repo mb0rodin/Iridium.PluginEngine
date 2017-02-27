@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Unified .NET Core Service Locator plugin system. A port of my Platinum.PluginEngine.</Description>
+    <Copyright>Copyright (C) 2015-2016 0xFireball, IridiumIon Software</Copyright>
+    <AssemblyTitle>IridiumIon.PluginEngine</AssemblyTitle>
+    <VersionPrefix>1.3.0</VersionPrefix>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>Iridium.PluginEngine</AssemblyName>
+    <PackageId>Iridium.PluginEngine</PackageId>
+    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CookieIoC" Version="1.0.0-*" />
+    <PackageReference Include="Iridium.PluginCore" Version="1.0.0-*" />
+  </ItemGroup>
+
+</Project>
