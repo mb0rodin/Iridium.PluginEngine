@@ -1,17 +1,19 @@
 
 # Iridium.PluginEngine
 
-Unified .NET Core Service Locator plugin system. A port of my Platinum.PluginEngine.
+A unified .NET Core Service Locator plugin system.
 
-Iridium.PluginEngine makes it extremely easy to add an extensible plugin system to a .NET Core CLI or ASP.NET Core app.
+Iridium.PluginEngine makes it extremely easy to add an extensible plugin system to any .NET application. It targets
+the .NET Standard platform for maximum portability and compatibility.
 
 ## About
 
-`Iridium.PluginEngine` is a complete port of my [Platinum.PluginEngine](https://github.com/0xFireball/Platinum.PluginEngine) library,
-that allows you to use a service locator pattern with a framework that makes setup very easy.
+`Iridium.PluginEngine` allows you to use a service locator with a framework
+that takes care of the hard work and provides an extensible API for
+integration into any application.
 
 A [full example](https://github.com/0xFireball/Iridium.PluginEngine/tree/master/Iridium.PluginEngine/src/example) is provided:
-here is an excerpt of the main code complete with comments explaining everything:
+here is an excerpt of the main code complete with comments detailing standard usage of the API:
 
 ```csharp
 using DemoPlugins;
@@ -89,6 +91,6 @@ a built-in service locator for registering default and custom plugin implementat
 
 ## License
 
-Copyright &copy; 2016-2017 0xFireball, IridiumIon Software. All Rights Reserved.
+Copyright &copy; 2016-2017 Nihal Talur (0xFireball), IridiumIon Software. All Rights Reserved.
 
 Licensed under the Apache License 2.0
