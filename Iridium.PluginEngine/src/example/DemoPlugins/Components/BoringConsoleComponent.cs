@@ -16,30 +16,10 @@ namespace DemoPlugins.Components
 
         public override string Name => nameof(BoringConsoleComponent);
 
-        public override string PluginGuid => "0937tyvhwocmwcn99amrnovnr09-doesitlooklikeitried";
+        public override string PluginIdentifier => "0937tyvhwocmwcn99amrnovnr09-doesitlooklikeitried";
 
         public override string PreferencesKey => "boringconsole";
 
         public override Version Version => new Version(0, 0);
-
-        public override void ConfigurePlugin(PluginPreferences pluginSettings)
-        {
-        }
-
-        public override void Dispose()
-        {
-        }
-
-        public override void LoadComponents()
-        {
-        }
-
-        public override void Shutdown()
-        {
-        }
-
-        public override void UnloadComponents()
-        {
-        }
     }
 }
