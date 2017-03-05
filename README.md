@@ -1,7 +1,7 @@
 
 # Iridium.PluginEngine
 
-A unified .NET Core Service Locator plugin system.
+A unified .NET Core Service Locator plugin system powered by my [Iridium.PluginCore](https://github.com/0xFireball/Iridium.PluginCore) library, which provides support for dynamically loading code.
 
 Iridium.PluginEngine makes it extremely easy to add an extensible plugin system to any .NET application. It targets
 the .NET Standard platform for maximum portability and compatibility.
